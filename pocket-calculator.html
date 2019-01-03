@@ -14,52 +14,55 @@
   <body>
     <div class="Heading">
       <h1>Pocket Calculator</h1>
-      <h5>Magic Math at Your Finger Tips</h5>
+      <h5>Math at Your Finger Tips</h5>
     </div>
 
-    <p class="output" id="calc-output">
 
-    </p>
-
-    <p class="result" id="mario-easy-result">
-
-    </p>
-
-
+    <br/>
       <div style="text-align: center;">
-        <button onclick="clear();">AC</button>
-        <button onclick="negate();">+/-</button>
-        <button onclick="percentage();">%</button>
-        <button onclick="divide();" id="longWidth">÷</button>
-        <br/>
-        <button onclick="power();">x<sup>y</sup></button>
-        <button onclick="seven();">7</button>
-        <button onclick="eight();">8</button>
-        <button onclick="nine();">9</button>
-        <button onclick="multiply();">x</button>
-        <br/>
-        <button onclick="roots();"><sup>y</sup>&#8730;x</button>
-        <button onclick="four();">4</button>
-        <button onclick="five();">5</button>
-        <button onclick="six();">6</button>
-        <button onclick="subtract();">-</button>
+        <table align="center">
+          <tr>
+            <td colspan="5" class="output"><p id="calc-output">
 
-        <br/>
-
-        <button onclick="pi();">&#x3C0;</button>
-        <button onclick="one();">1</button>
-        <button onclick="two();">2</button>
-        <button onclick="three();">3</button>
-        <button onclick="add();">+</button>
-
-        <br/>
-
-        <div class="bottom">
-          <button onclick="zero();" id="longWidth">0</button>
-          <button onclick="decimal();">.</button>
-          <button onclick="equals();">=</button>
-        </div>
-
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2"><button onclick="clear();" class="longheight">AC</button></td>
+            <td><button onclick="negate();">+/-</button></td>
+            <td><button onclick="percentage();">%</button></td>
+            <td colspan="2"><button onclick="divide();" class="longWidth" id="orange">÷</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="seven();">7</button></td>
+            <td><button onclick="eight();">8</button></td>
+            <td><button onclick="nine();">9</button></td>
+            <td><button onclick="multiply();" id="orange">x</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="power();">x<sup>y</sup></button></td>
+            <td><button onclick="four();">4</button></td>
+            <td><button onclick="five();">5</button></td>
+            <td><button onclick="six();">6</button></td>
+            <td><button onclick="subtract();" id="orange">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="roots();"><sup>y</sup>&#8730;x</button></td>
+            <td><button onclick="one();">1</button></td>
+            <td><button onclick="two();">2</button></td>
+            <td><button onclick="three();">3</button></td>
+            <td><button onclick="add();" id="orange">+</button></td>
+          </tr>
+          <tr>
+          <div class="bottom">
+          <!--<button onclick="mystery();" id="blank">?</button>-->
+            <td><button onclick="pi();">&#x3C0;</button></td>
+            <td colspan="2"><button onclick="zero();" class="longWidth">0</button></td>
+            <td><button onclick="decimal();">.</button></td>
+            <td><button onclick="equals();" id="orange">=</button></td>
+          </div>
+          </tr>
+        </table>
       </div>
 
 

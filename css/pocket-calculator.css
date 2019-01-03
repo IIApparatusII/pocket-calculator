@@ -8,18 +8,45 @@ h5 {
   text-align: center;
 }
 
+table {
+
+}
+
 button {
   display: inline-block;
   height: 2em;
   width: 3em;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
+  cursor: pointer;
 }
 
-#longWidth {
-  width: 6em;
+td.output {
+  height: 75px;
+  background-color: grey;
 }
 
+.longWidth {
+  width: 6.2em;
+}
 
-.bottom {
-  margin-left: 3em;
+.longheight {
+  height: 4.2em;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#blank {
+  color: white;
+  background-color: white;
+}
+
+#calc-output {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  text-align: right;
+  font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
+  font-size: 30px;
 }
