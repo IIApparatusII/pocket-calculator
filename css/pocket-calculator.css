@@ -14,23 +14,23 @@ table {
 
 button {
   display: inline-block;
-  height: 2em;
-  width: 3em;
+  height: 4em;
+  width: 6em;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
   cursor: pointer;
 }
 
 td.output {
-  height: 75px;
+  height: 90px;
   background-color: grey;
 }
 
 .longWidth {
-  width: 6.2em;
+  width: 12.3em;
 }
 
 .longheight {
-  height: 4.2em;
+  height: 8.3em;
 }
 
 #orange {
@@ -48,5 +48,5 @@ td.output {
   margin-right: 10px;
   text-align: right;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 }
