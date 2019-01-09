@@ -45,8 +45,10 @@ td.output {
 #calc-output {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-right: 10px;
+  margin-right: 0px;
   text-align: right;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
   font-size: 40px;
+  background-color: grey;
+  border-style: hidden;
 }

@@ -1,5 +1,9 @@
 /*add changing border color*/
-function zero() {
+function number(num) {
+  document.form.textview.value = document.form.textview.value + num;
+}
+
+/*function zero() {
   var display = 0
   var div=document.getElementById('calc-output');
   div.innerHTML=(`${display}`);
@@ -68,48 +72,6 @@ function clear() {
 
 function add() {
   display = zero() + "+";
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-/*
-function two() {
-  var display = 2
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function two() {
-  var display = 2
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function two() {
-  var display = 2
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function two() {
-  var display = 2
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function two() {
-  var display = 2
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function two() {
-  var display = 2
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function two() {
-  var display = 2
   var div=document.getElementById('calc-output');
   div.innerHTML=(`${display}`);
 }
