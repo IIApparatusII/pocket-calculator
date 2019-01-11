@@ -24,12 +24,12 @@
           <tr>
             <td colspan="5" class="output">
               <form name="form">
-                <input class = "textview" name = "textview" id="calc-output">
+                <input type="number" class = "textview" name = "textview" readonly id = "calc-output">
               </form>
             </td>
           </tr>
           <tr>
-            <td rowspan="2"><button onclick="clear();" class="longheight">AC</button></td>
+            <td rowspan="2"><button onclick="reset();" class="longheight">AC</button></td>
             <td><button onclick="negate();">+/-</button></td>
             <td><button onclick="percentage();">%</button></td>
             <td colspan="2"><button onclick="divide();" class="longWidth" id="orange">÷</button></td>
@@ -52,7 +52,7 @@
             <td><button value="1" onclick="number(1);">1</button></td>
             <td><button value="2" onclick="number(2);">2</button></td>
             <td><button value="3" onclick="number(3);">3</button></td>
-            <td><button onclick="add();" id="orange">+</button></td>
+            <td><button value ="+" onclick="number('+');" id="orange">+</button></td>
           </tr>
           <tr>
           <div class="bottom">
@@ -60,7 +60,7 @@
             <td><button onclick="pi();">&#x3C0;</button></td>
             <td colspan="2"><button value="0" onclick="number(0);"class="longWidth">0</button></td>
             <td><button onclick="decimal();">.</button></td>
-            <td><button onclick="equals();" id="orange">=</button></td>
+            <td><button onclick="equals();" value="=" id="orange">=</button></td>
           </div>
           </tr>
         </table>

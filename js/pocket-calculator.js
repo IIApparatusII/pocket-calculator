@@ -3,6 +3,17 @@ function number(num) {
   document.form.textview.value = document.form.textview.value + num;
 }
 
+function reset() {
+  document.form.textview.value = 0;
+}
+
+function equals() {
+  var exp = document.form.textview
+  if (exp){
+    document.form.textview.value = eval(exp);
+  }
+}
+
 /*function zero() {
   var display = 0
   var div=document.getElementById('calc-output');
