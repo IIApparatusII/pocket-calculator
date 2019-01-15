@@ -1,16 +1,23 @@
 /*add changing border color*/
-function number(num) {
+function insert(num) {
   document.form.textview.value = document.form.textview.value + num;
 }
 
 function reset() {
-  document.form.textview.value = 0;
+  document.form.textview.value = "";
 }
 
 function equals() {
-  var exp = document.form.textview
+  var exp = document.form.textview.value
   if (exp){
     document.form.textview.value = eval(exp);
+  }
+}
+
+function negate() {
+  document.form.textview.value = document.form.textview.value * -1
+  if (document.form.textview.value == "") {
+    document.form.textview.value = ""
   }
 }
 
