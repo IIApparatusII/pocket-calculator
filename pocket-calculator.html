@@ -31,7 +31,7 @@
           <tr>
             <td rowspan="2"><button class="longheight" value="AC" onclick="reset();">AC</button></td>
             <td><button value="+/-" onclick="negate();">+/-</button></td>
-            <td><button>%</button></td>
+            <td><button value="%" onclick="percentage();">%</button></td>
             <td colspan="2"><button value="/" onclick="insert('/');" class="longWidth" id="orange">÷</button></td>
           </tr>
           <tr>
@@ -41,14 +41,14 @@
             <td><button value="*" onclick="insert('*');" id="orange">x</button></td>
           </tr>
           <tr>
-            <td><button>x<sup>y</sup></button></td>
+            <td><button value="x" onclick="exponent();">x<sup>y</sup></button></td>
             <td><button value="4" onclick="insert(4);">4</button></td>
             <td><button value="5" onclick="insert(5);">5</button></td>
             <td><button value="6" onclick="insert(6);">6</button></td>
             <td><button value="-" onclick="insert('-');" id="orange">-</button></td>
           </tr>
           <tr>
-            <td><button><sup>y</sup>&#8730;x</button></td>
+            <td><button value="y" onclick="root();"><sup>y</sup>&#8730;x</button></td>
             <td><button value="1" onclick="insert(1);">1</button></td>
             <td><button value="2" onclick="insert(2);">2</button></td>
             <td><button value="3" onclick="insert(3);">3</button></td>

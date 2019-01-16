@@ -8,89 +8,30 @@ function reset() {
 }
 
 function equals() {
-  var exp = document.form.textview.value
+  var exp = document.form.textview.value;
   if (exp){
     document.form.textview.value = eval(exp);
   }
 }
 
+/*make negate work with chain of funcions --> 85+4 turns into 85+ (-4)*/
 function negate() {
-  document.form.textview.value = document.form.textview.value * -1
+  document.form.textview.value = document.form.textview.value * -1;
   if (document.form.textview.value == "") {
-    document.form.textview.value = ""
+    document.form.textview.value = "";
   }
 }
 
-/*function zero() {
-  var display = 0
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-  return display;
+function percentage() {
+  document.form.textview.value = document.form.textview.value / 100;
 }
 
-function one() {
-  var display = 1;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
+/*Figure out what replaces insert() or putting in the actual exponent*/
+function exponent() {
+  document.form.textview.value = Math.pow(document.form.textview.value, x);
 }
 
-function two() {
-  var display = 2;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
+/*Math.pow(n, 1/root); n is base value being rooted*/
+function root() {
+  
 }
-
-function three() {
-  var display = 3;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function four() {
-  var display = 4;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function five() {
-  var display = 5;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function six() {
-  var display = 6;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function seven() {
-  var display = 7;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function eight() {
-  var display = 8;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function nine() {
-  var display = 9;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function clear() {
-  var display = 0;
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-
-function add() {
-  display = zero() + "+";
-  var div=document.getElementById('calc-output');
-  div.innerHTML=(`${display}`);
-}
-*/
