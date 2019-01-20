@@ -24,6 +24,7 @@ function equals() {
   }
   if (exp = "infinity"){
     document.form.textview.value = "Error";
+  }
 }
 
 function add() {
