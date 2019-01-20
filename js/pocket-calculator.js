@@ -69,5 +69,5 @@ function root() {
 }
 
 function pi() {
-  document.form.textview.value = document.form.textview.value + "&#x3C0;"
+  document.form.textview.value = document.form.textview.value + "3.14"
 }
