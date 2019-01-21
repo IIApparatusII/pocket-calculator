@@ -22,7 +22,7 @@ function equals() {
   if (exp){
     document.form.textview.value = eval(exp);
   }
-  if (exp = "infinity"){
+  if (exp == "infinity"){
     document.form.textview.value = "Error";
   }
 }
