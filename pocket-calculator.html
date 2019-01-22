@@ -24,7 +24,7 @@
           <tr>
             <td colspan="5" class="output">
               <form name="form">
-                <input class = "textview" name = "textview" readonly id = "calc-output">
+                <input class = "textview" name = "textview" readonly id = "calc-output" value="0">
               </form>
             </td>
           </tr>
@@ -41,14 +41,14 @@
             <td><button value="*" onclick="multiply();" id="orange">x</button></td>
           </tr>
           <tr>
-            <td><button value="x" onclick="exponent();">x<sup>y</sup></button></td>
+            <td><button value="x" onclick="exponent();">x<sup>2</sup></button></td>
             <td><button value="4" onclick="insert(4);">4</button></td>
             <td><button value="5" onclick="insert(5);">5</button></td>
             <td><button value="6" onclick="insert(6);">6</button></td>
             <td><button value="-" onclick="subtract();" id="orange">-</button></td>
           </tr>
           <tr>
-            <td><button value="y" onclick="root();"><sup>y</sup>&#8730;x</button></td>
+            <td><button value="root" onclick="root();">&#8730;x</button></td>
             <td><button value="1" onclick="insert(1);">1</button></td>
             <td><button value="2" onclick="insert(2);">2</button></td>
             <td><button value="3" onclick="insert(3);">3</button></td>
@@ -59,7 +59,7 @@
           <!--<button onclick="mystery();" id="blank">?</button>-->
             <td><button value "&#x3C0;" onclick="pi();">&#x3C0;</button></td>
             <td colspan="2"><button value="0" onclick="insert(0);"class="longWidth">0</button></td>
-            <td><button value="." onclick="insert('.');">.</button></td>
+            <td><button value="." onclick="decimal();">.</button></td>
             <td><button value="=" onclick="equals();" id="orange">=</button></td>
           </div>
           </tr>
